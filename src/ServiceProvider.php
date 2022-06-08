@@ -29,7 +29,7 @@ class ServiceProvider extends BaseServiceProvider
         config(['logging.channels.logstash' => [
             'driver' => 'single',
             'path' => env('LOG_STREAM', storage_path('logs/app.log')),
-            'level' => env('LOG_LEVEL', 'info'),
+            'level' => env('LOG_LEVEL', 'debug'),
             'tap' => [
                 LogstashTap::class,
                 ProcessorTap::class,
