@@ -34,6 +34,7 @@ class ServiceProvider extends BaseServiceProvider
                 LogstashTap::class,
                 ProcessorTap::class,
             ],
+
         ]]);
 
         // add a preconfigured log channel for stdout
